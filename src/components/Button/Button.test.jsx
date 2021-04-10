@@ -20,7 +20,7 @@ describe('<Button />', ()=>{
     });
 
     it('should be disabled when disabled is true', ()=>{
-        const fn = jest.fn();    
+        const fn = jest.fn();     
         render(<Button text="More Posts"  onClick={fn} disabled={true}/>);
         expect(screen.getByRole('button', {name:"More Posts"})).toBeDisabled();
     });

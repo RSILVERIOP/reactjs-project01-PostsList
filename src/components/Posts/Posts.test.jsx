@@ -12,7 +12,7 @@ describe('<Posts />',()=>{
          .toHaveLength(3);
 
          expect(screen.getAllByRole('img', {src: /png/i}))
-         .toHaveLength(3);
+         .toHaveLength(3); 
 
          expect(screen.getAllByText(/body/i))
          .toHaveLength(3);

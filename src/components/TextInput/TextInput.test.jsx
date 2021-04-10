@@ -8,7 +8,7 @@ describe('<TextInput />', ()=>{
         const fn = jest.fn();
         render(<TextInput searchValue={'testing'} handleChange={fn}/>);
         const input = screen.getByPlaceholderText('Enter your search');
-        expect(input).toHaveAttribute('value','testing');
+        expect(input).toHaveAttribute('value','testing'); 
     });
 
     it('should call handleChange function on each key pressed', ()=>{
